@@ -1,0 +1,91 @@
+{
+  "name": "CY24SU10",
+  "dataColors": [
+    "#1F7A8C",
+    "#E4572E",
+    "#13203A",
+    "#C98A0B",
+    "#2E8B57",
+    "#8FB8C2",
+    "#F2A58C",
+    "#5B6578"
+  ],
+  "good": "#2E8B57",
+  "neutral": "#C98A0B",
+  "bad": "#C0392B",
+  "maximum": "#C0392B",
+  "center": "#C98A0B",
+  "minimum": "#2E8B57",
+  "background": "#FFFFFF",
+  "foreground": "#13203A",
+  "tableAccent": "#1F7A8C",
+  "textClasses": {
+    "title": {
+      "fontFace": "Amiri",
+      "fontSize": 15,
+      "color": "#13203A"
+    },
+    "header": {
+      "fontFace": "Amiri",
+      "fontSize": 12,
+      "color": "#13203A"
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "fontSize": 10,
+      "color": "#5B6578"
+    },
+    "callout": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 26,
+      "color": "#1F7A8C"
+    }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#DDE2EA"
+              }
+            },
+            "radius": 12
+          }
+        ],
+        "dropShadow": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#F3F5F8"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    }
+  }
+}

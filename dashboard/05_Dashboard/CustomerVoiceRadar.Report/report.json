@@ -1,0 +1,564 @@
+{
+  "config": "{\"version\": \"5.43\", \"themeCollection\": {\"baseTheme\": {\"name\": \"CY24SU10\", \"version\": \"5.61\", \"type\": 2}, \"customTheme\": {\"name\": \"CustomerVoiceRadar_Theme.json\", \"version\": \"5.61\", \"type\": 1}}, \"activeSectionIndex\": 0, \"defaultDrillFilterOtherVisuals\": true, \"settings\": {\"useStylableVisualContainerHeader\": true, \"exportDataMode\": 1, \"useNewFilterPaneExperience\": true, \"allowChangeFilterTypes\": true}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "name": "SharedResources",
+        "type": 2,
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ]
+      }
+    },
+    {
+      "resourcePackage": {
+        "name": "RegisteredResources",
+        "type": 1,
+        "disabled": false,
+        "items": [
+          {
+            "name": "CustomerVoiceRadar_Theme.json",
+            "path": "CustomerVoiceRadar_Theme.json",
+            "type": 202
+          },
+          {
+            "name": "cvr_bg_1.png",
+            "path": "cvr_bg_1.png",
+            "type": 100
+          },
+          {
+            "name": "cvr_bg_2.png",
+            "path": "cvr_bg_2.png",
+            "type": 100
+          },
+          {
+            "name": "cvr_bg_3.png",
+            "path": "cvr_bg_3.png",
+            "type": 100
+          },
+          {
+            "name": "cvr_bg_4.png",
+            "path": "cvr_bg_4.png",
+            "type": 100
+          },
+          {
+            "name": "cvr_bg_5.png",
+            "path": "cvr_bg_5.png",
+            "type": 100
+          }
+        ]
+      }
+    }
+  ],
+  "publicCustomVisuals": [],
+  "sections": [
+    {
+      "name": "ReportSection01",
+      "displayName": "نظرة عامة",
+      "displayOption": 1,
+      "width": 1280,
+      "height": 720,
+      "config": "{\"objects\": {\"background\": [{\"properties\": {\"image\": {\"image\": {\"name\": {\"expr\": {\"Literal\": {\"Value\": \"'cvr_bg_1.png'\"}}}, \"url\": {\"expr\": {\"ResourcePackageItem\": {\"PackageName\": \"RegisteredResources\", \"PackageType\": 1, \"ItemName\": \"cvr_bg_1.png\"}}}, \"scaling\": {\"expr\": {\"Literal\": {\"Value\": \"'Fit'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}]}}",
+      "filters": "[]",
+      "ordinal": 0,
+      "visualContainers": [
+        {
+          "x": 1104,
+          "y": 410,
+          "z": 0,
+          "width": 144,
+          "height": 56,
+          "config": "{\"name\": \"2b85038333b24279aa77\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1104, \"y\": 410, \"z\": 0, \"width\": 144, \"height\": 56, \"tabOrder\": 0}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"DimDate.year\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"DimDate\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"year\"}, \"Name\": \"DimDate.year\", \"NativeReferenceName\": \"year\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"DimDate.year\": {\"displayName\": \"السنة\"}}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}]}, \"syncGroup\": {\"groupName\": \"DimDate_year\", \"fieldChanges\": true, \"filterChanges\": true}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 1104,
+          "y": 470,
+          "z": 1000,
+          "width": 144,
+          "height": 56,
+          "config": "{\"name\": \"6e4eb67452cf453a88cd\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1104, \"y\": 470, \"z\": 1000, \"width\": 144, \"height\": 56, \"tabOrder\": 1000}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FactOrders.sales_channel\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"FactOrders\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"sales_channel\"}, \"Name\": \"FactOrders.sales_channel\", \"NativeReferenceName\": \"sales_channel\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"FactOrders.sales_channel\": {\"displayName\": \"قناة البيع\"}}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}]}, \"syncGroup\": {\"groupName\": \"FactOrders_sales_channel\", \"fieldChanges\": true, \"filterChanges\": true}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 1104,
+          "y": 530,
+          "z": 2000,
+          "width": 144,
+          "height": 56,
+          "config": "{\"name\": \"144b4915046747f4a070\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1104, \"y\": 530, \"z\": 2000, \"width\": 144, \"height\": 56, \"tabOrder\": 2000}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FactOrders.city\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"FactOrders\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"city\"}, \"Name\": \"FactOrders.city\", \"NativeReferenceName\": \"city\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"FactOrders.city\": {\"displayName\": \"المدينة\"}}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}]}, \"syncGroup\": {\"groupName\": \"FactOrders_city\", \"fieldChanges\": true, \"filterChanges\": true}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 40,
+          "y": 148,
+          "z": 3000,
+          "width": 164,
+          "height": 76,
+          "config": "{\"name\": \"267e17bdc6564eeb915d\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 40, \"y\": 148, \"z\": 3000, \"width\": 164, \"height\": 76, \"tabOrder\": 3000}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Total Sales\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Total Sales\"}, \"Name\": \"_Measures.Total Sales\", \"NativeReferenceName\": \"Total Sales\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Total Sales\": {\"displayName\": \"المبيعات (ريال)\"}}, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"20D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1F7A8C'\"}}}}}}}], \"categoryLabels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 212,
+          "y": 148,
+          "z": 4000,
+          "width": 164,
+          "height": 76,
+          "config": "{\"name\": \"6b62b5def7954879bee4\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 212, \"y\": 148, \"z\": 4000, \"width\": 164, \"height\": 76, \"tabOrder\": 4000}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Orders\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Orders\"}, \"Name\": \"_Measures.Orders\", \"NativeReferenceName\": \"Orders\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Orders\": {\"displayName\": \"الطلبات\"}}, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"20D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1F7A8C'\"}}}}}}}], \"categoryLabels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 384,
+          "y": 148,
+          "z": 5000,
+          "width": 164,
+          "height": 76,
+          "config": "{\"name\": \"5d03395d27974e1baf9a\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 384, \"y\": 148, \"z\": 5000, \"width\": 164, \"height\": 76, \"tabOrder\": 5000}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Customers\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Customers\"}, \"Name\": \"_Measures.Customers\", \"NativeReferenceName\": \"Customers\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Customers\": {\"displayName\": \"العملاء\"}}, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"20D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1F7A8C'\"}}}}}}}], \"categoryLabels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 556,
+          "y": 148,
+          "z": 6000,
+          "width": 164,
+          "height": 76,
+          "config": "{\"name\": \"817e27b6aecb47ada7fd\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 556, \"y\": 148, \"z\": 6000, \"width\": 164, \"height\": 76, \"tabOrder\": 6000}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Avg Rating\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Avg Rating\"}, \"Name\": \"_Measures.Avg Rating\", \"NativeReferenceName\": \"Avg Rating\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Avg Rating\": {\"displayName\": \"متوسط التقييم\"}}, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"20D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1F7A8C'\"}}}}}}}], \"categoryLabels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 728,
+          "y": 148,
+          "z": 7000,
+          "width": 164,
+          "height": 76,
+          "config": "{\"name\": \"af44dd74dfe8489a863e\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 728, \"y\": 148, \"z\": 7000, \"width\": 164, \"height\": 76, \"tabOrder\": 7000}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Late %\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Late %\"}, \"Name\": \"_Measures.Late %\", \"NativeReferenceName\": \"Late %\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Late %\": {\"displayName\": \"نسبة التأخير\"}}, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"20D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1F7A8C'\"}}}}}}}], \"categoryLabels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 900,
+          "y": 148,
+          "z": 8000,
+          "width": 164,
+          "height": 76,
+          "config": "{\"name\": \"37d78a0725b94d138520\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 900, \"y\": 148, \"z\": 8000, \"width\": 164, \"height\": 76, \"tabOrder\": 8000}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Complaints\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Complaints\"}, \"Name\": \"_Measures.Complaints\", \"NativeReferenceName\": \"Complaints\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Complaints\": {\"displayName\": \"الشكاوى\"}}, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"20D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1F7A8C'\"}}}}}}}], \"categoryLabels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 40,
+          "y": 232,
+          "z": 9000,
+          "width": 1024,
+          "height": 220,
+          "config": "{\"name\": \"218d332b0b614fdb8092\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 40, \"y\": 232, \"z\": 9000, \"width\": 1024, \"height\": 220, \"tabOrder\": 9000}}], \"singleVisual\": {\"visualType\": \"lineChart\", \"projections\": {\"Category\": [{\"queryRef\": \"DimDate.year_month\", \"active\": true}], \"Y\": [{\"queryRef\": \"_Measures.Total Sales\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"DimDate\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"year_month\"}, \"Name\": \"DimDate.year_month\", \"NativeReferenceName\": \"year_month\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Total Sales\"}, \"Name\": \"_Measures.Total Sales\", \"NativeReferenceName\": \"Total Sales\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Total Sales\": {\"displayName\": \"المبيعات\"}}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'المبيعات الشهرية'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"13D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}], \"subTitle\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'إجمالي المبيعات بالريال لكل شهر'\"}}}}}]}, \"objects\": {\"categoryAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}}}], \"valueAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}, \"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"legend\": [{\"properties\": {\"showTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Top'\"}}}}}], \"labels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}}}], \"lineStyles\": [{\"properties\": {\"showMarker\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"markerSize\": {\"expr\": {\"Literal\": {\"Value\": \"4D\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 40,
+          "y": 460,
+          "z": 10000,
+          "width": 336,
+          "height": 236,
+          "config": "{\"name\": \"86553be9337040d587de\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 40, \"y\": 460, \"z\": 10000, \"width\": 336, \"height\": 236, \"tabOrder\": 10000}}], \"singleVisual\": {\"visualType\": \"donutChart\", \"projections\": {\"Category\": [{\"queryRef\": \"FactOrders.order_status\", \"active\": true}], \"Y\": [{\"queryRef\": \"_Measures.Orders\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"FactOrders\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"order_status\"}, \"Name\": \"FactOrders.order_status\", \"NativeReferenceName\": \"order_status\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Orders\"}, \"Name\": \"_Measures.Orders\", \"NativeReferenceName\": \"Orders\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Orders\": {\"displayName\": \"الطلبات\"}}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'الطلبات حسب الحالة'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"13D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}], \"subTitle\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'نسبة كل حالة من إجمالي الطلبات'\"}}}}}]}, \"objects\": {\"legend\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Bottom'\"}}}, \"showTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"labels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 384,
+          "y": 460,
+          "z": 11000,
+          "width": 680,
+          "height": 236,
+          "config": "{\"name\": \"629bf634a9b84114998e\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 384, \"y\": 460, \"z\": 11000, \"width\": 680, \"height\": 236, \"tabOrder\": 11000}}], \"singleVisual\": {\"visualType\": \"clusteredBarChart\", \"projections\": {\"Category\": [{\"queryRef\": \"FactOrders.city\", \"active\": true}], \"Y\": [{\"queryRef\": \"_Measures.Total Sales\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"FactOrders\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"city\"}, \"Name\": \"FactOrders.city\", \"NativeReferenceName\": \"city\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Total Sales\"}, \"Name\": \"_Measures.Total Sales\", \"NativeReferenceName\": \"Total Sales\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Total Sales\"}}}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Total Sales\": {\"displayName\": \"المبيعات\"}}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'المبيعات حسب المدينة'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"13D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}], \"subTitle\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'مرتبة من الأعلى'\"}}}}}]}, \"objects\": {\"categoryAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}}}], \"valueAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"legend\": [{\"properties\": {\"showTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Top'\"}}}}}], \"labels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}}}]}}}",
+          "filters": "[]"
+        }
+      ]
+    },
+    {
+      "name": "ReportSection02",
+      "displayName": "صوت العميل",
+      "displayOption": 1,
+      "width": 1280,
+      "height": 720,
+      "config": "{\"objects\": {\"background\": [{\"properties\": {\"image\": {\"image\": {\"name\": {\"expr\": {\"Literal\": {\"Value\": \"'cvr_bg_2.png'\"}}}, \"url\": {\"expr\": {\"ResourcePackageItem\": {\"PackageName\": \"RegisteredResources\", \"PackageType\": 1, \"ItemName\": \"cvr_bg_2.png\"}}}, \"scaling\": {\"expr\": {\"Literal\": {\"Value\": \"'Fit'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}]}}",
+      "filters": "[]",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "x": 1104,
+          "y": 410,
+          "z": 0,
+          "width": 144,
+          "height": 56,
+          "config": "{\"name\": \"c6e72469127f4f29bc66\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1104, \"y\": 410, \"z\": 0, \"width\": 144, \"height\": 56, \"tabOrder\": 0}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"DimDate.year\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"DimDate\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"year\"}, \"Name\": \"DimDate.year\", \"NativeReferenceName\": \"year\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"DimDate.year\": {\"displayName\": \"السنة\"}}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}]}, \"syncGroup\": {\"groupName\": \"DimDate_year\", \"fieldChanges\": true, \"filterChanges\": true}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 1104,
+          "y": 470,
+          "z": 1000,
+          "width": 144,
+          "height": 56,
+          "config": "{\"name\": \"174605578147426296ea\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1104, \"y\": 470, \"z\": 1000, \"width\": 144, \"height\": 56, \"tabOrder\": 1000}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FactOrders.sales_channel\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"FactOrders\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"sales_channel\"}, \"Name\": \"FactOrders.sales_channel\", \"NativeReferenceName\": \"sales_channel\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"FactOrders.sales_channel\": {\"displayName\": \"قناة البيع\"}}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}]}, \"syncGroup\": {\"groupName\": \"FactOrders_sales_channel\", \"fieldChanges\": true, \"filterChanges\": true}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 1104,
+          "y": 530,
+          "z": 2000,
+          "width": 144,
+          "height": 56,
+          "config": "{\"name\": \"f1967ef61fc14e659dda\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1104, \"y\": 530, \"z\": 2000, \"width\": 144, \"height\": 56, \"tabOrder\": 2000}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FactOrders.city\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"FactOrders\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"city\"}, \"Name\": \"FactOrders.city\", \"NativeReferenceName\": \"city\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"FactOrders.city\": {\"displayName\": \"المدينة\"}}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}]}, \"syncGroup\": {\"groupName\": \"FactOrders_city\", \"fieldChanges\": true, \"filterChanges\": true}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 1104,
+          "y": 590,
+          "z": 3000,
+          "width": 144,
+          "height": 56,
+          "config": "{\"name\": \"5b919f036e9d4e80a212\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1104, \"y\": 590, \"z\": 3000, \"width\": 144, \"height\": 56, \"tabOrder\": 3000}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FactReviews.language\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"FactReviews\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"language\"}, \"Name\": \"FactReviews.language\", \"NativeReferenceName\": \"language\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"FactReviews.language\": {\"displayName\": \"لغة التعليق\"}}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}]}, \"syncGroup\": {\"groupName\": \"FactReviews_language\", \"fieldChanges\": true, \"filterChanges\": true}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 40,
+          "y": 148,
+          "z": 4000,
+          "width": 336,
+          "height": 76,
+          "config": "{\"name\": \"e39ad0ca84604dcb88d7\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 40, \"y\": 148, \"z\": 4000, \"width\": 336, \"height\": 76, \"tabOrder\": 4000}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Reviews\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Reviews\"}, \"Name\": \"_Measures.Reviews\", \"NativeReferenceName\": \"Reviews\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Reviews\": {\"displayName\": \"التعليقات\"}}, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"20D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1F7A8C'\"}}}}}}}], \"categoryLabels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 384,
+          "y": 148,
+          "z": 5000,
+          "width": 336,
+          "height": 76,
+          "config": "{\"name\": \"c4fd1b4e4e314102a2c5\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 384, \"y\": 148, \"z\": 5000, \"width\": 336, \"height\": 76, \"tabOrder\": 5000}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Avg Rating\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Avg Rating\"}, \"Name\": \"_Measures.Avg Rating\", \"NativeReferenceName\": \"Avg Rating\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Avg Rating\": {\"displayName\": \"متوسط التقييم\"}}, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"20D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1F7A8C'\"}}}}}}}], \"categoryLabels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 728,
+          "y": 148,
+          "z": 6000,
+          "width": 336,
+          "height": 76,
+          "config": "{\"name\": \"a6e8e105d3e54510aa7b\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 728, \"y\": 148, \"z\": 6000, \"width\": 336, \"height\": 76, \"tabOrder\": 6000}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Negative Text %\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Negative Text %\"}, \"Name\": \"_Measures.Negative Text %\", \"NativeReferenceName\": \"Negative Text %\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Negative Text %\": {\"displayName\": \"نسبة النص السلبي\"}}, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"20D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1F7A8C'\"}}}}}}}], \"categoryLabels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 40,
+          "y": 232,
+          "z": 7000,
+          "width": 504,
+          "height": 464,
+          "config": "{\"name\": \"ca9379bde3974f23abce\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 40, \"y\": 232, \"z\": 7000, \"width\": 504, \"height\": 464, \"tabOrder\": 7000}}], \"singleVisual\": {\"visualType\": \"clusteredBarChart\", \"projections\": {\"Category\": [{\"queryRef\": \"ReviewTopics.topic_ar\", \"active\": true}], \"Y\": [{\"queryRef\": \"_Measures.Negative Mentions\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"ReviewTopics\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"topic_ar\"}, \"Name\": \"ReviewTopics.topic_ar\", \"NativeReferenceName\": \"topic_ar\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Negative Mentions\"}, \"Name\": \"_Measures.Negative Mentions\", \"NativeReferenceName\": \"Negative Mentions\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Negative Mentions\"}}}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Negative Mentions\": {\"displayName\": \"تعليقات سلبية\"}}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'وش أكثر شي يشتكي منه العملاء؟'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"13D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}], \"subTitle\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'عدد التعليقات السلبية لكل موضوع'\"}}}}}]}, \"objects\": {\"categoryAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}}}], \"valueAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"legend\": [{\"properties\": {\"showTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Top'\"}}}}}], \"labels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 552,
+          "y": 232,
+          "z": 8000,
+          "width": 512,
+          "height": 228,
+          "config": "{\"name\": \"8d3bfa2adcf245fe8f82\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 552, \"y\": 232, \"z\": 8000, \"width\": 512, \"height\": 228, \"tabOrder\": 8000}}], \"singleVisual\": {\"visualType\": \"hundredPercentStackedBarChart\", \"projections\": {\"Category\": [{\"queryRef\": \"ReviewTopics.topic_ar\", \"active\": true}], \"Series\": [{\"queryRef\": \"ReviewTopics.sentiment_ar\"}], \"Y\": [{\"queryRef\": \"_Measures.Topic Mentions\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"ReviewTopics\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"topic_ar\"}, \"Name\": \"ReviewTopics.topic_ar\", \"NativeReferenceName\": \"topic_ar\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"sentiment_ar\"}, \"Name\": \"ReviewTopics.sentiment_ar\", \"NativeReferenceName\": \"sentiment_ar\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Topic Mentions\"}, \"Name\": \"_Measures.Topic Mentions\", \"NativeReferenceName\": \"Topic Mentions\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Topic Mentions\": {\"displayName\": \"التعليقات\"}}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'نبرة التعليقات في كل موضوع'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"13D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}], \"subTitle\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'نسبة الإيجابي والسلبي والمختلط'\"}}}}}]}, \"objects\": {\"categoryAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}}}], \"valueAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"legend\": [{\"properties\": {\"showTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Top'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 552,
+          "y": 468,
+          "z": 9000,
+          "width": 512,
+          "height": 228,
+          "config": "{\"name\": \"494262efe8564731ad30\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 552, \"y\": 468, \"z\": 9000, \"width\": 512, \"height\": 228, \"tabOrder\": 9000}}], \"singleVisual\": {\"visualType\": \"donutChart\", \"projections\": {\"Category\": [{\"queryRef\": \"FactReviews.sentiment_ar\", \"active\": true}], \"Y\": [{\"queryRef\": \"_Measures.Reviews\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"FactReviews\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"sentiment_ar\"}, \"Name\": \"FactReviews.sentiment_ar\", \"NativeReferenceName\": \"sentiment_ar\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Reviews\"}, \"Name\": \"_Measures.Reviews\", \"NativeReferenceName\": \"Reviews\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Reviews\": {\"displayName\": \"التعليقات\"}}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'نبرة كل التعليقات'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"13D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}], \"subTitle\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'من تحليل النص، مو من النجوم'\"}}}}}]}, \"objects\": {\"legend\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Bottom'\"}}}, \"showTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"labels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}}}]}}}",
+          "filters": "[]"
+        }
+      ]
+    },
+    {
+      "name": "ReportSection03",
+      "displayName": "السبب الجذري",
+      "displayOption": 1,
+      "width": 1280,
+      "height": 720,
+      "config": "{\"objects\": {\"background\": [{\"properties\": {\"image\": {\"image\": {\"name\": {\"expr\": {\"Literal\": {\"Value\": \"'cvr_bg_3.png'\"}}}, \"url\": {\"expr\": {\"ResourcePackageItem\": {\"PackageName\": \"RegisteredResources\", \"PackageType\": 1, \"ItemName\": \"cvr_bg_3.png\"}}}, \"scaling\": {\"expr\": {\"Literal\": {\"Value\": \"'Fit'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}]}}",
+      "filters": "[]",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "x": 1104,
+          "y": 410,
+          "z": 0,
+          "width": 144,
+          "height": 56,
+          "config": "{\"name\": \"d0d54d33a39047958835\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1104, \"y\": 410, \"z\": 0, \"width\": 144, \"height\": 56, \"tabOrder\": 0}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"DimDate.year\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"DimDate\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"year\"}, \"Name\": \"DimDate.year\", \"NativeReferenceName\": \"year\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"DimDate.year\": {\"displayName\": \"السنة\"}}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}]}, \"syncGroup\": {\"groupName\": \"DimDate_year\", \"fieldChanges\": true, \"filterChanges\": true}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 1104,
+          "y": 470,
+          "z": 1000,
+          "width": 144,
+          "height": 56,
+          "config": "{\"name\": \"d4f57978119b4e9f9c2a\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1104, \"y\": 470, \"z\": 1000, \"width\": 144, \"height\": 56, \"tabOrder\": 1000}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FactOrders.sales_channel\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"FactOrders\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"sales_channel\"}, \"Name\": \"FactOrders.sales_channel\", \"NativeReferenceName\": \"sales_channel\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"FactOrders.sales_channel\": {\"displayName\": \"قناة البيع\"}}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}]}, \"syncGroup\": {\"groupName\": \"FactOrders_sales_channel\", \"fieldChanges\": true, \"filterChanges\": true}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 1104,
+          "y": 530,
+          "z": 2000,
+          "width": 144,
+          "height": 56,
+          "config": "{\"name\": \"b72294ce774b4220a731\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1104, \"y\": 530, \"z\": 2000, \"width\": 144, \"height\": 56, \"tabOrder\": 2000}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FactOrders.city\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"FactOrders\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"city\"}, \"Name\": \"FactOrders.city\", \"NativeReferenceName\": \"city\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"FactOrders.city\": {\"displayName\": \"المدينة\"}}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}]}, \"syncGroup\": {\"groupName\": \"FactOrders_city\", \"fieldChanges\": true, \"filterChanges\": true}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 40,
+          "y": 148,
+          "z": 3000,
+          "width": 336,
+          "height": 76,
+          "config": "{\"name\": \"7004b05265174c3f9157\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 40, \"y\": 148, \"z\": 3000, \"width\": 336, \"height\": 76, \"tabOrder\": 3000}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Complaint Cost\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Complaint Cost\"}, \"Name\": \"_Measures.Complaint Cost\", \"NativeReferenceName\": \"Complaint Cost\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Complaint Cost\": {\"displayName\": \"تكلفة الشكاوى (ريال)\"}}, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"20D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1F7A8C'\"}}}}}}}], \"categoryLabels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 384,
+          "y": 148,
+          "z": 4000,
+          "width": 336,
+          "height": 76,
+          "config": "{\"name\": \"84cd3d2274f945c08f7f\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 384, \"y\": 148, \"z\": 4000, \"width\": 336, \"height\": 76, \"tabOrder\": 4000}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Late %\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Late %\"}, \"Name\": \"_Measures.Late %\", \"NativeReferenceName\": \"Late %\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Late %\": {\"displayName\": \"نسبة التأخير\"}}, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"20D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1F7A8C'\"}}}}}}}], \"categoryLabels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 728,
+          "y": 148,
+          "z": 5000,
+          "width": 336,
+          "height": 76,
+          "config": "{\"name\": \"c0d695214b824b9c9053\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 728, \"y\": 148, \"z\": 5000, \"width\": 336, \"height\": 76, \"tabOrder\": 5000}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Avg Delivery Days\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Avg Delivery Days\"}, \"Name\": \"_Measures.Avg Delivery Days\", \"NativeReferenceName\": \"Avg Delivery Days\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Avg Delivery Days\": {\"displayName\": \"متوسط أيام التوصيل\"}}, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"20D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1F7A8C'\"}}}}}}}], \"categoryLabels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 40,
+          "y": 232,
+          "z": 6000,
+          "width": 504,
+          "height": 464,
+          "config": "{\"name\": \"5b77e8b68d4c46d09932\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 40, \"y\": 232, \"z\": 6000, \"width\": 504, \"height\": 464, \"tabOrder\": 6000}}], \"singleVisual\": {\"visualType\": \"clusteredBarChart\", \"projections\": {\"Category\": [{\"queryRef\": \"FactOrders.city\", \"active\": true}], \"Y\": [{\"queryRef\": \"_Measures.Late %\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"FactOrders\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"city\"}, \"Name\": \"FactOrders.city\", \"NativeReferenceName\": \"city\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Late %\"}, \"Name\": \"_Measures.Late %\", \"NativeReferenceName\": \"Late %\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Late %\"}}}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Late %\": {\"displayName\": \"نسبة التأخير\"}}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'نسبة التأخير حسب المدينة'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"13D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}], \"subTitle\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'الطلبات اللي أخذت أكثر من 6 أيام'\"}}}}}]}, \"objects\": {\"categoryAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}}}], \"valueAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"legend\": [{\"properties\": {\"showTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Top'\"}}}}}], \"labels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 552,
+          "y": 232,
+          "z": 7000,
+          "width": 512,
+          "height": 228,
+          "config": "{\"name\": \"3b2dabb878f646fc8973\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 552, \"y\": 232, \"z\": 7000, \"width\": 512, \"height\": 228, \"tabOrder\": 7000}}], \"singleVisual\": {\"visualType\": \"clusteredColumnChart\", \"projections\": {\"Category\": [{\"queryRef\": \"FactReviews.delivery_band\", \"active\": true}], \"Y\": [{\"queryRef\": \"_Measures.Avg Rating\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"FactReviews\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"delivery_band\"}, \"Name\": \"FactReviews.delivery_band\", \"NativeReferenceName\": \"delivery_band\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Avg Rating\"}, \"Name\": \"_Measures.Avg Rating\", \"NativeReferenceName\": \"Avg Rating\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Avg Rating\": {\"displayName\": \"متوسط التقييم\"}}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'هل التأخير ينزّل التقييم؟'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"13D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}], \"subTitle\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'متوسط النجوم حسب مدة التوصيل'\"}}}}}]}, \"objects\": {\"categoryAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}}}], \"valueAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"legend\": [{\"properties\": {\"showTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Top'\"}}}}}], \"labels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 552,
+          "y": 468,
+          "z": 8000,
+          "width": 512,
+          "height": 228,
+          "config": "{\"name\": \"e6ab4efa505e4d9a95ce\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 552, \"y\": 468, \"z\": 8000, \"width\": 512, \"height\": 228, \"tabOrder\": 8000}}], \"singleVisual\": {\"visualType\": \"tableEx\", \"projections\": {\"Values\": [{\"queryRef\": \"FactOrders.warehouse_name\"}, {\"queryRef\": \"_Measures.Orders\"}, {\"queryRef\": \"_Measures.Late %\"}, {\"queryRef\": \"_Measures.Complaint Cost\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"FactOrders\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"warehouse_name\"}, \"Name\": \"FactOrders.warehouse_name\", \"NativeReferenceName\": \"warehouse_name\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Orders\"}, \"Name\": \"_Measures.Orders\", \"NativeReferenceName\": \"Orders\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Late %\"}, \"Name\": \"_Measures.Late %\", \"NativeReferenceName\": \"Late %\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Complaint Cost\"}, \"Name\": \"_Measures.Complaint Cost\", \"NativeReferenceName\": \"Complaint Cost\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Late %\"}}}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"FactOrders.warehouse_name\": {\"displayName\": \"المستودع\"}, \"_Measures.Orders\": {\"displayName\": \"الطلبات\"}, \"_Measures.Late %\": {\"displayName\": \"نسبة التأخير\"}, \"_Measures.Complaint Cost\": {\"displayName\": \"تكلفة الشكاوى\"}}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'أداء المستودعات'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"13D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}], \"subTitle\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'مرتبة حسب نسبة التأخير'\"}}}}}]}, \"objects\": {\"values\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}}}], \"columnHeaders\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}}}]}}}",
+          "filters": "[]"
+        }
+      ]
+    },
+    {
+      "name": "ReportSection04",
+      "displayName": "الإنذار المبكر",
+      "displayOption": 1,
+      "width": 1280,
+      "height": 720,
+      "config": "{\"objects\": {\"background\": [{\"properties\": {\"image\": {\"image\": {\"name\": {\"expr\": {\"Literal\": {\"Value\": \"'cvr_bg_4.png'\"}}}, \"url\": {\"expr\": {\"ResourcePackageItem\": {\"PackageName\": \"RegisteredResources\", \"PackageType\": 1, \"ItemName\": \"cvr_bg_4.png\"}}}, \"scaling\": {\"expr\": {\"Literal\": {\"Value\": \"'Fit'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}]}}",
+      "filters": "[]",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "x": 1104,
+          "y": 410,
+          "z": 0,
+          "width": 144,
+          "height": 56,
+          "config": "{\"name\": \"22a70135109b4372beec\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1104, \"y\": 410, \"z\": 0, \"width\": 144, \"height\": 56, \"tabOrder\": 0}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"DimDate.year\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"DimDate\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"year\"}, \"Name\": \"DimDate.year\", \"NativeReferenceName\": \"year\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"DimDate.year\": {\"displayName\": \"السنة\"}}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}]}, \"syncGroup\": {\"groupName\": \"DimDate_year\", \"fieldChanges\": true, \"filterChanges\": true}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 1104,
+          "y": 470,
+          "z": 1000,
+          "width": 144,
+          "height": 56,
+          "config": "{\"name\": \"06509d1283c74402b996\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1104, \"y\": 470, \"z\": 1000, \"width\": 144, \"height\": 56, \"tabOrder\": 1000}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FactOrders.sales_channel\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"FactOrders\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"sales_channel\"}, \"Name\": \"FactOrders.sales_channel\", \"NativeReferenceName\": \"sales_channel\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"FactOrders.sales_channel\": {\"displayName\": \"قناة البيع\"}}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}]}, \"syncGroup\": {\"groupName\": \"FactOrders_sales_channel\", \"fieldChanges\": true, \"filterChanges\": true}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 1104,
+          "y": 530,
+          "z": 2000,
+          "width": 144,
+          "height": 56,
+          "config": "{\"name\": \"2c9e3a61222d47b5a255\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1104, \"y\": 530, \"z\": 2000, \"width\": 144, \"height\": 56, \"tabOrder\": 2000}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FactOrders.city\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"FactOrders\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"city\"}, \"Name\": \"FactOrders.city\", \"NativeReferenceName\": \"city\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"FactOrders.city\": {\"displayName\": \"المدينة\"}}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}]}, \"syncGroup\": {\"groupName\": \"FactOrders_city\", \"fieldChanges\": true, \"filterChanges\": true}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 40,
+          "y": 148,
+          "z": 3000,
+          "width": 250,
+          "height": 76,
+          "config": "{\"name\": \"e8c772d4975f42eaa23e\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 40, \"y\": 148, \"z\": 3000, \"width\": 250, \"height\": 76, \"tabOrder\": 3000}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.At Risk Customers\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"At Risk Customers\"}, \"Name\": \"_Measures.At Risk Customers\", \"NativeReferenceName\": \"At Risk Customers\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.At Risk Customers\": {\"displayName\": \"عملاء معرّضين للخسارة\"}}, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"20D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1F7A8C'\"}}}}}}}], \"categoryLabels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 298,
+          "y": 148,
+          "z": 4000,
+          "width": 250,
+          "height": 76,
+          "config": "{\"name\": \"52011f3b47764553bb34\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 298, \"y\": 148, \"z\": 4000, \"width\": 250, \"height\": 76, \"tabOrder\": 4000}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Revenue at Risk\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Revenue at Risk\"}, \"Name\": \"_Measures.Revenue at Risk\", \"NativeReferenceName\": \"Revenue at Risk\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Revenue at Risk\": {\"displayName\": \"إيراد معرّض للخسارة\"}}, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"20D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1F7A8C'\"}}}}}}}], \"categoryLabels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 556,
+          "y": 148,
+          "z": 5000,
+          "width": 250,
+          "height": 76,
+          "config": "{\"name\": \"1ee99b788f2749aa942c\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 556, \"y\": 148, \"z\": 5000, \"width\": 250, \"height\": 76, \"tabOrder\": 5000}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Avg Health Score\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Avg Health Score\"}, \"Name\": \"_Measures.Avg Health Score\", \"NativeReferenceName\": \"Avg Health Score\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Avg Health Score\": {\"displayName\": \"متوسط صحة العميل\"}}, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"20D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1F7A8C'\"}}}}}}}], \"categoryLabels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 814,
+          "y": 148,
+          "z": 6000,
+          "width": 250,
+          "height": 76,
+          "config": "{\"name\": \"49032b82221f4163ae49\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 814, \"y\": 148, \"z\": 6000, \"width\": 250, \"height\": 76, \"tabOrder\": 6000}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.High Severity Anomalies\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"High Severity Anomalies\"}, \"Name\": \"_Measures.High Severity Anomalies\", \"NativeReferenceName\": \"High Severity Anomalies\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.High Severity Anomalies\": {\"displayName\": \"حالات عالية الخطورة\"}}, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"20D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1F7A8C'\"}}}}}}}], \"categoryLabels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 40,
+          "y": 232,
+          "z": 7000,
+          "width": 504,
+          "height": 464,
+          "config": "{\"name\": \"ea12132a263c49a389e9\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 40, \"y\": 232, \"z\": 7000, \"width\": 504, \"height\": 464, \"tabOrder\": 7000}}], \"singleVisual\": {\"visualType\": \"clusteredBarChart\", \"projections\": {\"Category\": [{\"queryRef\": \"Anomalies.issue_type\", \"active\": true}], \"Series\": [{\"queryRef\": \"Anomalies.severity\"}], \"Y\": [{\"queryRef\": \"_Measures.Anomaly Count\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Anomalies\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"issue_type\"}, \"Name\": \"Anomalies.issue_type\", \"NativeReferenceName\": \"issue_type\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"severity\"}, \"Name\": \"Anomalies.severity\", \"NativeReferenceName\": \"severity\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Anomaly Count\"}, \"Name\": \"_Measures.Anomaly Count\", \"NativeReferenceName\": \"Anomaly Count\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Anomaly Count\"}}}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Anomaly Count\": {\"displayName\": \"العدد\"}}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'الحالات الشاذة'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"13D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}], \"subTitle\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'حسب النوع ودرجة الخطورة'\"}}}}}]}, \"objects\": {\"categoryAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}}}], \"valueAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"legend\": [{\"properties\": {\"showTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Top'\"}}}}}], \"labels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 552,
+          "y": 232,
+          "z": 8000,
+          "width": 512,
+          "height": 228,
+          "config": "{\"name\": \"5776913ec7854ada8bd9\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 552, \"y\": 232, \"z\": 8000, \"width\": 512, \"height\": 228, \"tabOrder\": 8000}}], \"singleVisual\": {\"visualType\": \"scatterChart\", \"projections\": {\"Category\": [{\"queryRef\": \"DimCustomer.customer_id\", \"active\": true}], \"Series\": [{\"queryRef\": \"DimCustomer.health_band\"}], \"X\": [{\"queryRef\": \"_Measures.Avg Health Score\"}], \"Y\": [{\"queryRef\": \"_Measures.Customer Revenue\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"DimCustomer\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"customer_id\"}, \"Name\": \"DimCustomer.customer_id\", \"NativeReferenceName\": \"customer_id\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"health_band\"}, \"Name\": \"DimCustomer.health_band\", \"NativeReferenceName\": \"health_band\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Avg Health Score\"}, \"Name\": \"_Measures.Avg Health Score\", \"NativeReferenceName\": \"Avg Health Score\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Customer Revenue\"}, \"Name\": \"_Measures.Customer Revenue\", \"NativeReferenceName\": \"Customer Revenue\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Avg Health Score\": {\"displayName\": \"مؤشر الصحة\"}, \"_Measures.Customer Revenue\": {\"displayName\": \"الإيراد\"}}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'صحة العميل مقابل إيراده'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"13D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}], \"subTitle\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'كل نقطة عميل'\"}}}}}]}, \"objects\": {\"categoryAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}}}], \"valueAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"legend\": [{\"properties\": {\"showTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Top'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 552,
+          "y": 468,
+          "z": 9000,
+          "width": 512,
+          "height": 228,
+          "config": "{\"name\": \"1ba929d30d1747e5bb7d\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 552, \"y\": 468, \"z\": 9000, \"width\": 512, \"height\": 228, \"tabOrder\": 9000}}], \"singleVisual\": {\"visualType\": \"tableEx\", \"projections\": {\"Values\": [{\"queryRef\": \"AtRiskCustomers.customer_id\"}, {\"queryRef\": \"AtRiskCustomers.city\"}, {\"queryRef\": \"AtRiskCustomers.health_score\"}, {\"queryRef\": \"AtRiskCustomers.revenue_sar\"}, {\"queryRef\": \"AtRiskCustomers.complaints\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"AtRiskCustomers\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"customer_id\"}, \"Name\": \"AtRiskCustomers.customer_id\", \"NativeReferenceName\": \"customer_id\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"city\"}, \"Name\": \"AtRiskCustomers.city\", \"NativeReferenceName\": \"city\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"health_score\"}, \"Name\": \"AtRiskCustomers.health_score\", \"NativeReferenceName\": \"health_score\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"revenue_sar\"}, \"Name\": \"AtRiskCustomers.revenue_sar\", \"NativeReferenceName\": \"revenue_sar\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"complaints\"}, \"Name\": \"AtRiskCustomers.complaints\", \"NativeReferenceName\": \"complaints\"}], \"OrderBy\": [{\"Direction\": 1, \"Expression\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"health_score\"}}}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"AtRiskCustomers.customer_id\": {\"displayName\": \"العميل\"}, \"AtRiskCustomers.city\": {\"displayName\": \"المدينة\"}, \"AtRiskCustomers.health_score\": {\"displayName\": \"الدرجة\"}, \"AtRiskCustomers.revenue_sar\": {\"displayName\": \"الإيراد\"}, \"AtRiskCustomers.complaints\": {\"displayName\": \"الشكاوى\"}}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'العملاء المعرّضين للخسارة'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"13D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}], \"subTitle\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'الأقل درجة فوق'\"}}}}}]}, \"objects\": {\"values\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}}}], \"columnHeaders\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}}}]}}}",
+          "filters": "[]"
+        }
+      ]
+    },
+    {
+      "name": "ReportSection05",
+      "displayName": "جودة البيانات",
+      "displayOption": 1,
+      "width": 1280,
+      "height": 720,
+      "config": "{\"objects\": {\"background\": [{\"properties\": {\"image\": {\"image\": {\"name\": {\"expr\": {\"Literal\": {\"Value\": \"'cvr_bg_5.png'\"}}}, \"url\": {\"expr\": {\"ResourcePackageItem\": {\"PackageName\": \"RegisteredResources\", \"PackageType\": 1, \"ItemName\": \"cvr_bg_5.png\"}}}, \"scaling\": {\"expr\": {\"Literal\": {\"Value\": \"'Fit'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}]}}",
+      "filters": "[]",
+      "ordinal": 4,
+      "visualContainers": [
+        {
+          "x": 40,
+          "y": 148,
+          "z": 0,
+          "width": 250,
+          "height": 76,
+          "config": "{\"name\": \"5ed4373bab394031848b\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 40, \"y\": 148, \"z\": 0, \"width\": 250, \"height\": 76, \"tabOrder\": 0}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Rows Removed\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Rows Removed\"}, \"Name\": \"_Measures.Rows Removed\", \"NativeReferenceName\": \"Rows Removed\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Rows Removed\": {\"displayName\": \"صفوف انحذفت\"}}, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"20D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1F7A8C'\"}}}}}}}], \"categoryLabels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 298,
+          "y": 148,
+          "z": 1000,
+          "width": 250,
+          "height": 76,
+          "config": "{\"name\": \"3898324c2d594e3a9364\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 298, \"y\": 148, \"z\": 1000, \"width\": 250, \"height\": 76, \"tabOrder\": 1000}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Cleaning Actions\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Cleaning Actions\"}, \"Name\": \"_Measures.Cleaning Actions\", \"NativeReferenceName\": \"Cleaning Actions\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Cleaning Actions\": {\"displayName\": \"إجراءات تنظيف موثّقة\"}}, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"20D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1F7A8C'\"}}}}}}}], \"categoryLabels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 556,
+          "y": 148,
+          "z": 2000,
+          "width": 250,
+          "height": 76,
+          "config": "{\"name\": \"569080dc1e2d49c9aa90\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 556, \"y\": 148, \"z\": 2000, \"width\": 250, \"height\": 76, \"tabOrder\": 2000}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Review Anomalies\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Review Anomalies\"}, \"Name\": \"_Measures.Review Anomalies\", \"NativeReferenceName\": \"Review Anomalies\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Review Anomalies\": {\"displayName\": \"مشاكل في التعليقات\"}}, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"20D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1F7A8C'\"}}}}}}}], \"categoryLabels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 814,
+          "y": 148,
+          "z": 3000,
+          "width": 250,
+          "height": 76,
+          "config": "{\"name\": \"07260b26536941d1b133\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 814, \"y\": 148, \"z\": 3000, \"width\": 250, \"height\": 76, \"tabOrder\": 3000}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Anomaly Count\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Anomaly Count\"}, \"Name\": \"_Measures.Anomaly Count\", \"NativeReferenceName\": \"Anomaly Count\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Anomaly Count\": {\"displayName\": \"كل الحالات الشاذة\"}}, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"20D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1F7A8C'\"}}}}}}}], \"categoryLabels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 40,
+          "y": 232,
+          "z": 4000,
+          "width": 504,
+          "height": 228,
+          "config": "{\"name\": \"da7119a36e4c468faaf4\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 40, \"y\": 232, \"z\": 4000, \"width\": 504, \"height\": 228, \"tabOrder\": 4000}}], \"singleVisual\": {\"visualType\": \"clusteredBarChart\", \"projections\": {\"Category\": [{\"queryRef\": \"DataQuality.dataset\", \"active\": true}], \"Y\": [{\"queryRef\": \"_Measures.Rows Before\"}, {\"queryRef\": \"_Measures.Rows After\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"DataQuality\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"dataset\"}, \"Name\": \"DataQuality.dataset\", \"NativeReferenceName\": \"dataset\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Rows Before\"}, \"Name\": \"_Measures.Rows Before\", \"NativeReferenceName\": \"Rows Before\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Rows After\"}, \"Name\": \"_Measures.Rows After\", \"NativeReferenceName\": \"Rows After\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Rows Before\": {\"displayName\": \"قبل\"}, \"_Measures.Rows After\": {\"displayName\": \"بعد\"}}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'الصفوف قبل وبعد التنظيف'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"13D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}], \"subTitle\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'لكل جدول'\"}}}}}]}, \"objects\": {\"categoryAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}}}], \"valueAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"legend\": [{\"properties\": {\"showTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Top'\"}}}}}], \"labels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 552,
+          "y": 232,
+          "z": 5000,
+          "width": 512,
+          "height": 228,
+          "config": "{\"name\": \"f0be1ece0e5f4211b7ab\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 552, \"y\": 232, \"z\": 5000, \"width\": 512, \"height\": 228, \"tabOrder\": 5000}}], \"singleVisual\": {\"visualType\": \"clusteredBarChart\", \"projections\": {\"Category\": [{\"queryRef\": \"DataQuality.dataset\", \"active\": true}], \"Y\": [{\"queryRef\": \"_Measures.Missing Before\"}, {\"queryRef\": \"_Measures.Missing After\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"DataQuality\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"dataset\"}, \"Name\": \"DataQuality.dataset\", \"NativeReferenceName\": \"dataset\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Missing Before\"}, \"Name\": \"_Measures.Missing Before\", \"NativeReferenceName\": \"Missing Before\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Missing After\"}, \"Name\": \"_Measures.Missing After\", \"NativeReferenceName\": \"Missing After\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Missing Before\": {\"displayName\": \"قبل\"}, \"_Measures.Missing After\": {\"displayName\": \"بعد\"}}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'القيم الناقصة قبل وبعد التنظيف'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"13D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}], \"subTitle\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'لكل جدول'\"}}}}}]}, \"objects\": {\"categoryAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}}}], \"valueAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"legend\": [{\"properties\": {\"showTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Top'\"}}}}}], \"labels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 40,
+          "y": 468,
+          "z": 6000,
+          "width": 504,
+          "height": 228,
+          "config": "{\"name\": \"1e2bd1a2899947ca92a0\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 40, \"y\": 468, \"z\": 6000, \"width\": 504, \"height\": 228, \"tabOrder\": 6000}}], \"singleVisual\": {\"visualType\": \"clusteredBarChart\", \"projections\": {\"Category\": [{\"queryRef\": \"Anomalies.issue_type\", \"active\": true}], \"Y\": [{\"queryRef\": \"_Measures.Review Anomalies\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Anomalies\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"issue_type\"}, \"Name\": \"Anomalies.issue_type\", \"NativeReferenceName\": \"issue_type\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Review Anomalies\"}, \"Name\": \"_Measures.Review Anomalies\", \"NativeReferenceName\": \"Review Anomalies\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Review Anomalies\"}}}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"_Measures.Review Anomalies\": {\"displayName\": \"العدد\"}}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'مشاكل التعليقات'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"13D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}], \"subTitle\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'تواريخ غير منطقية وتقييمات تعارض النص'\"}}}}}]}, \"objects\": {\"categoryAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}}}], \"valueAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"legend\": [{\"properties\": {\"showTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Top'\"}}}}}], \"labels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 552,
+          "y": 468,
+          "z": 7000,
+          "width": 512,
+          "height": 228,
+          "config": "{\"name\": \"9d2a3af4f16d40758aac\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 552, \"y\": 468, \"z\": 7000, \"width\": 512, \"height\": 228, \"tabOrder\": 7000}}], \"singleVisual\": {\"visualType\": \"tableEx\", \"projections\": {\"Values\": [{\"queryRef\": \"CleaningLog.Dataset\"}, {\"queryRef\": \"CleaningLog.Column\"}, {\"queryRef\": \"CleaningLog.Action\"}, {\"queryRef\": \"CleaningLog.Affected Rows\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"CleaningLog\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Dataset\"}, \"Name\": \"CleaningLog.Dataset\", \"NativeReferenceName\": \"Dataset\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Column\"}, \"Name\": \"CleaningLog.Column\", \"NativeReferenceName\": \"Column\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Action\"}, \"Name\": \"CleaningLog.Action\", \"NativeReferenceName\": \"Action\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Affected Rows\"}, \"Name\": \"CleaningLog.Affected Rows\", \"NativeReferenceName\": \"Affected Rows\"}]}, \"drillFilterOtherVisuals\": true, \"columnProperties\": {\"CleaningLog.Dataset\": {\"displayName\": \"الجدول\"}, \"CleaningLog.Column\": {\"displayName\": \"العمود\"}, \"CleaningLog.Action\": {\"displayName\": \"الإجراء\"}, \"CleaningLog.Affected Rows\": {\"displayName\": \"الصفوف\"}}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'سجل التنظيف'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"13D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Amiri'\"}}}}}], \"subTitle\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'كل تعديل وسببه'\"}}}}}]}, \"objects\": {\"values\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}}}], \"columnHeaders\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}}}]}}}",
+          "filters": "[]"
+        }
+      ]
+    }
+  ],
+  "filters": "[]"
+}
